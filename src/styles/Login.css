@@ -1,0 +1,69 @@
+.bodylogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 6.1rem;
+    /* Puedes ajustar el ancho y alto de la clase .bodylog si es necesario */
+} 
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0;
+  }
+
+
+  .login-container {
+    font-size: 1em;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    height: auto; /* Deja que el alto se ajuste al contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 10;
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total */
+} 
+
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.not-succeed {
+    color: white;
+    font-size: 1.5em; /* Aumentar el tamaño de fuente */
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 15px; /* Aumentar el espaciado interno */
+    background-color: #E66E65;
+    display: inline-block;
+    border-radius: 5px;
+    border: red 2px solid;
+}
+.success {
+    color: white;
+    font-size: 1.5em; /* Aumentar el tamaño de fuente */
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 15px; /* Aumentar el espaciado interno */
+    background-color: #5cb85c;
+    display: inline-block;
+    border-radius: 5px;
+    border: green 2px solid;
+}

@@ -1,0 +1,375 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1519972064555-542444e71b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  text-align: center;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  width: 100%; 
+}
+
+.header-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+/* Imagen del logo */
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+  display: block;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2.0rem;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  
+}
+
+.game-title {
+  font-family: 'Poppins', sans-serif;
+  color: #333; /* Texto oscuro para contraste */
+  font-size: 2rem; /* Tamaño grande para destacar */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.448); /* Fondo blanco */
+  border: 3px solid #f7e285a4; /* Borde llamativo */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px auto; /* Centrado automático */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ligero sombreado del texto */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Login container */
+.login-container {
+  margin-top: 0px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+  padding: 20px;
+  display: inline-block;   
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 14px 30px; /* Ajustamos el tamaño del padding para mayor proporción */
+  margin: 10px auto;  /* Añadimos margen para separar el botón del título */
+  border-radius: 30px; /* Redondeamos más los bordes */
+  border: none;
+  background: linear-gradient(45deg, #D49B6A, #F2C97C, #9C7A4E);
+  color: white;
+  font-size: 1.2rem; /* Tamaño de fuente adecuado para el botón */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: block; /* Asegura que el botón esté centrado */
+  width: auto;  /* Ajusta el ancho automáticamente según el contenido */
+}
+
+button:hover {
+  background: white;
+  color: #D49B6A;
+  transform: scale(1.05);
+}
+
+button:active {
+  background: linear-gradient(45deg, #F2C97C, #9C7A4E);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(226, 183, 66, 0.5);
+}
+
+.options {
+  display: flex; /* Utiliza flexbox */
+  justify-content: space-evenly; /* Distribuye los botones de manera uniforme */
+  align-items: center; /* Alinea los botones verticalmente al centro */
+  gap: 10px; /* Espacio entre los botones */
+  flex-wrap: wrap; /* Permite que los botones se ajusten si el espacio es insuficiente */
+}
+
+.options button {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.choices-display {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+h3{
+  text-transform: uppercase;  /* Poner el nombre en mayúsculas */
+}
+
+.choice {
+  text-align: center;
+}
+
+.choice img {
+  width: 100px;
+  height: 100px;
+}
+
+.result-image img {
+  margin-top: 20px;
+  width: 125px;
+  height: 125px;
+}
+
+/* Textos */
+.text-box {
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block; 
+}
+
+/* Scroll para el historial */
+.history-container {
+  max-height: 200px;
+  overflow-y: auto; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(167, 226, 227, 0.9); 
+  margin-top: 20px;
+}
+
+
+.stats-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 10px;
+}
+.game-container{
+  flex:1;
+}
+
+
+.game-logic{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  min-height:68vh;
+  
+}
+
+.game-type {
+  background-color: rgba(255, 255, 255, 0.385); /* Fondo blanco */
+  padding: 20px;
+  border-radius: 15px;
+  border: 3px solid #f7e285a4; /* Borde con color llamativo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto; /* Centrado del recuadro */
+  font-family: 'Poppins', sans-serif;
+}
+
+.game-type p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.game-logic {
+  background-color: #fff5e1; /* Fondo cálido */
+  padding: 40px 20px; /* Espaciado interior */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: fit-content;
+  margin: 40px auto; /* Centrado automático */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #D49B6A, #F2C97C, #9C7A4E);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4caf50; /* Verde cuando está activado */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Mueve el círculo */
+}
+
+#mode-label {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem; /* Reducir tamaño del encabezado en pantallas pequeñas */
+  }
+
+  .login-container {
+      width: 90%; /* Ancho del contenedor de inicio de sesión */
+  }
+
+  .header-container {
+      padding: 20px; /* Reducir el padding en pantallas más pequeñas */
+  }
+
+  button {
+      font-size: 14px; /* Reducir el tamaño de la fuente del botón */
+      padding: 10px 20px; /* Ajustar el padding */
+  }
+
+  .choices-display {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      align-items: center; /* Centrar elementos */
+  }
+
+  .choice img {
+      width: 80px; /* Hacer las imágenes más pequeñas en pantallas pequeñas */
+      height: 80px; /* Ajustar la altura */
+  }
+
+  .result-image img {
+      width: 120px; /* Hacer la imagen del resultado más pequeña */
+      height: 120px; /* Ajustar la altura */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem; /* Reducir aún más el tamaño del encabezado en dispositivos muy pequeños */
+  }
+
+  .login-container {
+      width: 100%; /* Hacer que el contenedor ocupe todo el ancho */
+  }
+
+  button {
+      font-size: 12px; /* Reducir el tamaño de la fuente del botón */
+  }
+
+  .choices-display {
+      margin: 10px 0; /* Reducir el margen */
+  }
+}
+
+/* Para el botón de Iniciar Sesión*/
+.login-container a {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 10px; /* Espaciado debajo de "Registrarse" */
+  border-radius: 25px;
+  text-align: center;
+  background: linear-gradient(45deg, #D49B6A, #F2C97C, #9C7A4E);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none; /* Elimina el subrayado */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-container a:hover {
+  background: white;
+  color: #D49B6A;
+  transform: scale(1.05);
+}
+
+.login-container a:active {
+  background: linear-gradient(45deg, #F2C97C, #9C7A4E);
+}
+
+.login-container a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(226, 183, 66, 0.5);
+}
