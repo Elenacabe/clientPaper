@@ -19,7 +19,7 @@ function Register() {
     e.preventDefault();
     
     try {
-      const response = await axios.post('http://localhost:5000/register', { username, password });
+      const response = await axios.post('https://paperockapp.herokuapp.com/register', { username, password });
       console.log(response.data); 
       setSuccess('Usuario registrado correctamente.');
       navigate('/login')

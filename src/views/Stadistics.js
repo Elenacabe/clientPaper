@@ -13,10 +13,10 @@ function Stadistics({ user }) {
     React.useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/user/${user}`);
+                const response = await axios.get(`https://paperockapp.herokuapp.com/user/${user}`);
                 setUserData(response.data);
 
-                const rankingResponse = await axios.get('http://localhost:5000/getAllUsers');
+                const rankingResponse = await axios.get('https://paperockapp.herokuapp.com/getAllUsers');
                 const ranking = rankingResponse.data;
                 const position = ranking.findIndex((u) => u.username === user) + 1;
                 setRankingPosition(position);

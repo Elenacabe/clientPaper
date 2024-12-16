@@ -157,7 +157,7 @@ function Game({ user }) {
     console.log("EL RESULTADO FINAL ES", finalResult);
     console.log("El username es :", user)
     try {
-      const response = await axios.post('http://localhost:5000/resultsOfGame', {
+      const response = await axios.post('https://paperockapp.herokuapp.com/resultsOfGame', {
         result: finalResult,
         userId: user,
       });
