@@ -12,7 +12,7 @@ function Ranking({ user }) {
     React.useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('https://paperockapp.herokuapp.com/getAllUsers');
+                const response = await axios.get('https://paperockapp-93cd6728253a.herokuapp.com/getAllUsers');
                 setUsers(response.data);
             } catch (error) {
                 setError(true);
